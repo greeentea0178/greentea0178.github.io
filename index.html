@@ -1,90 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - 物理学科</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#projects">研究・プロジェクト</a></li>
+                <li><a href="diary.html">開発日記</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>こんにちは、<span class="highlight">私の名前</span>です</h1>
+            <p>東京工業大学 理学院 物理学科 4年</p>
+            <a href="#contact" class="cta-button">お問い合わせ</a>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>自己紹介</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>東京工業大学理学院物理学科で物理学を専攻しています。特に量子力学と統計力学に興味を持ち、研究室では量子多体系の研究を行っています。</p>
+                <p>学業成績：GPA 3.5/4.0</p>
+                <p>主な受賞歴：</p>
+                <ul>
+                    <li>2023年 物理学科優秀学生賞</li>
+                    <li>2022年 学業成績優秀者表彰</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="profile.jpg" alt="プロフィール画像">
+            </div>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>スキル</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-calculator"></i>
+                <h3>数理物理</h3>
+                <p>量子力学、統計力学、電磁気学</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>プログラミング</h3>
+                <p>Python, MATLAB, C++</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>データ解析</h3>
+                <p>実験データの解析と可視化</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-language"></i>
+                <h3>語学</h3>
+                <p>英語（TOEIC 800点）</p>
+            </div>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>研究・プロジェクト</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="project1.jpg" alt="研究プロジェクト1">
+                <h3>量子多体系の研究</h3>
+                <p>量子スピン系における相転移現象の理論的研究</p>
+                <a href="#" class="project-link">詳細を見る</a>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="研究プロジェクト2">
+                <h3>実験プロジェクト</h3>
+                <p>超伝導体の臨界温度測定と特性評価</p>
+                <a href="#" class="project-link">詳細を見る</a>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="研究プロジェクト3">
+                <h3>卒業研究</h3>
+                <p>量子コンピューティングにおける量子もつれの応用</p>
+                <a href="#" class="project-link">詳細を見る</a>
+            </div>
         </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>お問い合わせ</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
