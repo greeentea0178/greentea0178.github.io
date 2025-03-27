@@ -11,6 +11,11 @@
     <header>
         <nav>
             <div class="logo">Portfolio</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="../index.html">ホーム</a></li>
                 <li><a href="../index.html#about">自己紹介</a></li>
@@ -26,11 +31,11 @@
         <div class="diary-header">
             <h1>開発日記</h1>
             <p>ポートフォリオサイトの開発過程を記録しています</p>
+            <div class="diary-date">{{date}}</div>
         </div>
 
         <div class="diary-container">
             <div class="diary-entry">
-                <div class="diary-date">{{date}}</div>
                 <div class="diary-content">
                     {{content}}
                 </div>
