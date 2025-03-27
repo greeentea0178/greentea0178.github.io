@@ -87,4 +87,14 @@ async function loadDiaryEntries() {
 }
 
 // ページ読み込み時に実行
-document.addEventListener('DOMContentLoaded', loadDiaryEntries); 
+document.addEventListener('DOMContentLoaded', loadDiaryEntries);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');  // ハンバーガーアイコンの状態も変更
+    });
+}); 
